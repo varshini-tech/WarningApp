@@ -7,6 +7,7 @@ const port = process.env.PORT || 7294;
 // creating middleware
 // converts body data in json format(one of the application)
 const app = express();
+app.use(express.json());
 
 // importing routers
 const checkStatusRouter = require("./routes/checkStatus");
